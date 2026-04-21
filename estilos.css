@@ -1,0 +1,91 @@
+
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #cbbcb3;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.foto {
+    width: 220px;
+    border-radius: 5px;
+}
+
+
+.titulo h1 {
+    background-color: #9bb29a;
+    padding: 10px 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+
+.titulo p {
+    letter-spacing: 4px;
+    color: #333;
+}
+
+
+.contenido {
+    display: flex;
+    margin-top: 40px;
+}
+
+
+.izquierda, .derecha {
+    width: 50%;
+    padding: 20px;
+}
+
+
+h3 {
+    padding: 8px 20px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+
+.verde {
+    background-color: #9bb29a;
+}
+
+.beige {
+    background-color: #c9b19d;
+}
+
+
+.texto {
+    font-style: italic;
+    line-height: 1.6;
+}
+
+
+.contacto img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Listas */
+ul {
+    padding-left: 20px;
+}
+
+/* Educación */
+.educacion p {
+    margin-bottom: 20px;
+}
