@@ -2,156 +2,163 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Currículum - Lluavi Nahid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Lluavi Nahid</title>
     <style>
+        /* Definición de colores y fuentes */
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
             margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #d8c6bb;
+            color: #333;
         }
 
-        .container {
-            width: 80%;
-            margin: auto;
-            background: #e6d6cc;
-            padding: 20px;
+        .cv-container {
+            background-color: white;
+            width: 800px;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr; /* Dos columnas: Izquierda y Derecha */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
 
-        .header {
-            display: flex;
-            align-items: center;
+        /* Estilos generales de secciones */
+        .sidebar {
+            padding: 40px 30px;
         }
 
-        .header img {
-            width: 200px;
-            border-radius: 10px;
+        .main-content {
+            padding: 40px 30px;
         }
 
-        .header-text {
-            margin-left: 40px;
+        .profile-img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 30px;
         }
 
-        .header-text h1 {
-            background: #9bb29a;
-            padding: 10px;
-            display: inline-block;
-        }
-
-        .header-text h2 {
-            font-weight: normal;
+        h2.section-title {
+            background-color: #9ab495; /* Verde del CV */
+            color: #333;
+            text-align: center;
+            padding: 5px;
+            font-size: 1.2rem;
+            text-transform: uppercase;
             letter-spacing: 2px;
+            margin-bottom: 15px;
         }
 
-        .main {
-            display: flex;
-            margin-top: 30px;
-        }
-
-        .left, .right {
-            width: 50%;
+        .header-name {
+            background-color: #9ab495;
             padding: 20px;
+            text-align: center;
+            margin-bottom: 10px;
         }
 
-        h3 {
-            background: #9bb29a;
-            padding: 8px;
-            display: inline-block;
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 5px;
+            font-weight: normal;
         }
 
-        .right h3 {
-            background: #cbb6a6;
+        .subtitle {
+            text-align: center;
+            letter-spacing: 3px;
+            color: #555;
+            margin-bottom: 50px;
         }
 
+        .course-title {
+            background-color: #d8c0ab; /* Café claro del CV */
+            color: #333;
+            padding: 5px 20px;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Listas y textos */
         ul {
+            list-style-type: disc;
             padding-left: 20px;
         }
 
-        .contact p {
+        li {
+            margin-bottom: 5px;
+        }
+
+        .contact-info p, .education-info p {
             margin: 5px 0;
+            font-size: 0.9rem;
         }
 
-        .education {
-            margin-top: 20px;
+        .bold {
+            font-weight: bold;
         }
-
     </style>
 </head>
 <body>
 
-<div class="container">
-
-    <!-- HEADER -->
-    <div class="header">
-        <img src="tu-imagen.jpg" alt="Foto de perfil">
+    <div class="cv-container">
         
-        <div class="header-text">
-            <h1>LLUAVI NAHID</h1>
-            <h2>FUTURA MÉDICO CIRUJANA</h2>
-        </div>
-    </div>
+        <div class="sidebar">
+            <img src="WhatsApp Image 2026-04-23 at 2.39.08 PM.jpeg" alt="Foto de Perfil" class="profile-img">
 
-    <!-- CONTENIDO -->
-    <div class="main">
+            <h2 class="section-title">Acerca de mi</h2>
+            <p>Me defino como una persona responsable, creativa, disciplinada. Estudiante del tercer año de preparatoria.</p>
 
-        <!-- LADO IZQUIERDO -->
-        <div class="left">
-
-            <h3>ACERCA DE MI</h3>
-            <p>
-                Me defino como una persona responsable, creativa y disciplinada.
-                Estudiante del tercer año de preparatoria.
-            </p>
-
-            <h3>CONTACTO</h3>
-            <div class="contact">
-                <p>📞 5511872367</p>
-                <p>📧 lluaviherrera@gmail.com</p>
-                <p>📍 Ixtlahuaca de Rayón, Estado de México</p>
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-info">
+                <p><span class="bold">Celular:</span> 5511872367</p>
+                <p><span class="bold">Correo:</span> lluaviherrera@gmail.com</p>
+                <p><span class="bold">Dirección:</span> Ixtlahuaca de Rayon, Estado de México</p>
             </div>
 
-            <div class="education">
-                <h3>EDUCACIÓN</h3>
-                <p><strong>Instituto Cultural Canadiense</strong><br>
-                Preparatoria (2023-2026)</p>
-
-                <p><strong>Instituto Cultural Canadiense</strong><br>
-                Secundaria (2020-2023)</p>
+            <h2 class="section-title">Educación</h2>
+            <div class="education-info">
+                <p class="bold">Instituto Cultural Canadiense</p>
+                <p>Nivel de preparatoria<br>Generación 2023-2026</p>
+                <br>
+                <p class="bold">Instituto Cultural Canadiense</p>
+                <p>Nivel secundaria<br>Generación 2020-2023</p>
             </div>
-
         </div>
 
-        <!-- LADO DERECHO -->
-        <div class="right">
+        <div class="main-content">
+            <div class="header-name">
+                <h1>LLUAVI NAHID</h1>
+            </div>
+            <p class="subtitle">FUTURA MÉDICO CIRUJANA</p>
 
-            <h3>CURSOS / IDIOMAS</h3>
-
-            <p><strong>Inglés 85%</strong></p>
+            <h2 class="course-title">Cursos / Idiomas</h2>
+            
+            <h3>Ingles 85%</h3>
             <ul>
-                <li>Kinder</li>
-                <li>Primaria</li>
-                <li>Secundaria</li>
-                <li>Preparatoria</li>
+                <li>kinder</li>
+                <li>primaria</li>
+                <li>secundaria</li>
+                <li>preparatoria</li>
             </ul>
 
-            <p><strong>Francés 45%</strong></p>
+            <h3>Frances 45%</h3>
             <ul>
-                <li>Secundaria</li>
-                <li>Preparatoria</li>
+                <li>secundaria</li>
+                <li>preparatoria</li>
             </ul>
 
-            <p><strong>Coursera</strong></p>
+            <h3>Coursera</h3>
             <ul>
-                <li>Tesoros de Física</li>
+                <li>Tesoros de Física y sus descubridores</li>
                 <li>Trigonometría y geometría analítica</li>
-                <li>Nutrición y obesidad</li>
-                <li>Negocios con multinacionales</li>
+                <li>Nutrición y obesidad: control de sobrepeso</li>
+                <li>Hacer negocios con multinacionales y empresas en América Latina</li>
             </ul>
-
         </div>
 
     </div>
-
-</div>
 
 </body>
 </html>
